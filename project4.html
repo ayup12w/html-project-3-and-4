@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project4</title>
+    <style>
+body{
+    font-family: 'Arial', sans-serif;
+            background-color:  #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;   
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 250px;
+}
+.student-form {
+    margin-bottom: 20px;
+}
+
+.student-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.student-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+.student-form input,
+.student-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.student-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.student-table h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <form class="student-form">
+        <h2>Student Registration</h2>
+    <labe for="stdname"> <h3>stdname:</h3></labe>
+    <input type="text" id="stdname" name="stdname" placeholder="enter student name">
+    <br>
+    <labe for="age"> <h3>age:</h3></labe>
+    <input type="number" id="age" name="age" placeholder="enter your age">
+    <br>
+    <labe for="email"> <h3>email:</h3></labe>
+    <input type="email" id="email" name="email" placeholder="enter your email">
+    <br>
+    <labe for="phone"> <h3>phone number:</h3></labe>
+    <input type="tel" id="phone" name="phone" placeholder="enter your phone">
+    <br>
+    <label fot="gender"><h3>gender:</h3></label>
+    <select id="gender" name="gender">
+        <option value="male" >male</option>
+        <option value="female">female</option>
+    </select><br>
+    <label fot="course"><h3>course:</h3></label>
+    <select id="course" name="course">
+        <option value="html" >html</option>
+        <option value="css">css</option>
+        <option value="java">java</option>
+    </select><br>
+    <button type="button" id="save-button">Save</button>
+    </form>
+
+    <div class="student-table">
+        <h2>Registered Students</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ahmed Mohamed</td>
+                    <td>20</td>
+                    <td>iamahmed@gmail.com</td>
+                    <td>+25290*****</td>
+                    <td>Male</td>
+                    <td>HTML &amp; CSS</td>
+                </tr>
+                <tr>
+                    <td>Aisha Farah</td>
+                    <td>22</td>
+                    <td>iamaisha@gmail.com</td>
+                    <td>25290*****</td>
+                    <td>Female</td>
+                    <td>Python</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+</body>
+</html>
